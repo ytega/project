@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Линейные корабли</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+
+<!-- Кнопка перехода -->
+ <aside class="sidebar">
+Линейные корабли Балтийского флота: от «Полтавы» до «Святого Павла»
+<span></span>
+<a href="another.html" class="top-button"></a>
+</aside>
+
+<!-- Обёртка сцены -->
+<div id="scene">
+    <!-- Контейнер для корабля и точек -->
+    <div id="ship-container">
+        <!-- Фоновый корабль -->
+        <img src="Untitled.jpg" id="ship" alt="Корабль">
+
+        <!-- 9 точек на корабле (в процентах от ширины контейнера) -->
+        <div class="point" style="left: 5%" data-id="0"></div>
+        <div class="point" style="left: 15%" data-id="1"></div>
+        <div class="point" style="left: 25%" data-id="2"></div>
+        <div class="point" style="left: 35%" data-id="3"></div>
+        <div class="point" style="left: 45%" data-id="4"></div>
+        <div class="point" style="left: 55%" data-id="5"></div>
+        <div class="point" style="left: 65%" data-id="6"></div>
+        <div class="point" style="left: 75%" data-id="7"></div>
+        <div class="point" style="left: 85%" data-id="8"></div>
+    </div>
+    <!-- Панель управления -->
+    <div class="controls">
+        <button id="pauseBtn">Пауза</button>
+        <button id="resumeBtn" class="hide">Продолжить</button>
+        <button id="leftArrow" class="arrow hide">←</button>
+        <button id="rightArrow" class="arrow hide">→</button>
+    </div>
+</div>
+
+<!-- 9 всплывающих окон -->
+<div class="info-window" id="infoWindow">
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
+</div>
+
+<div class="info-window" data-id="1">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img2.jpg" alt="Изображение 2">
+    <p>Окно 2: Корабль эпохи парусного флота с трехъярусной артиллерией.</p>
+</div>
+
+<div class="info-window" data-id="2">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img3.jpg" alt="Изображение 3">
+    <p>Окно 3: Трехпалубный линейный корабль начала XVIII века.</p>
+</div>
+
+<div class="info-window" data-id="3">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img4.jpg" alt="Изображение 4">
+    <p>Окно 4: Первый корабль с паровым двигателем и гребными колесами.</p>
+</div>
+
+<div class="info-window" data-id="4">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img5.jpg" alt="Изображение 5">
+    <p>Окно 5: Дредноут начала XX века с мощной артиллерией.</p>
+</div>
+
+<div class="info-window" data-id="5">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img6.jpg" alt="Изображение 6">
+    <p>Окно 6: Линкор Второй мировой войны с авиационным вооружением.</p>
+</div>
+
+<div class="info-window" data-id="6">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img7.jpg" alt="Изображение 7">
+    <p>Окно 7: Современный линейный корабль с ракетными установками.</p>
+</div>
+
+<div class="info-window" data-id="7">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img8.jpg" alt="Изображение 8">
+    <p>Окно 8: Корабль с ядерным вооружением и системами ПВО.</p>
+</div>
+
+<div class="info-window" data-id="8">
+    <button class="close-btn">×</button>
+    <div class="gray-box"></div>
+    <img src="img9.jpg" alt="Изображение 9">
+    <p>Окно 9: Будущее линейных кораблей - автономные боевые платформы.</p>
+</div>
+
+<script>
+    let shipContainer = document.getElementById("ship-container");
+    let points = document.
+querySelectorAll(".point");
+    let windows = document.querySelectorAll(".info-window");
+    let closeBtns = document.querySelectorAll(".close-btn");
+
+    let paused = false;
+    let x = 0;
+    let speed = 0.1; // Замедленная скорость
+    let maxX = 0;
+    let windowTimer = null;
+    let windowOpenTime = 5000000; // 5 секунд на чтение
+    let lastWindowTime = 0;
+    let minWindowInterval = 5000; // Минимальное время между окнами - 5 секунд
+    
+    // Массив для отслеживания открытых окон
+    let openedWindows = Array(9).fill(false);
+    // Массив для отслеживания времени последнего открытия каждого окна
+    let windowLastOpened = Array(9).fill(0);
+
+    // Инициализация
+    function init() {
+        // Скрываем окна при загрузке
+        windows.forEach(w => w.style.display = "none");
+        
+        // Добавляем обработчики закрытия окон
+        closeBtns.forEach((btn, index) => {
+            btn.addEventListener('click', () => {
+                windows[index].style.display = "none";
+                if (windowTimer) {
+                    clearTimeout(windowTimer);
+                    windowTimer = null;
+                }
+            });
+        });
+
+        // Определяем максимальное смещение контейнера
+        updateMaxX();
+        window.addEventListener('resize', updateMaxX);
+        
+        console.log("Инициализация завершена. Всего окон: " + windows.length);
+        console.log("Всего точек: " + points.length);
+    }
+
+    // Обновляем максимальное смещение
+    function updateMaxX() {
+        const sceneWidth = document.getElementById('scene').offsetWidth;
+        const containerWidth = shipContainer.offsetWidth;
+        maxX = Math.max(0, containerWidth - sceneWidth);
+        console.log("maxX обновлен: " + maxX + " (ширина контейнера: " + containerWidth + ", ширина сцены: " + sceneWidth + ")");
+    }
+
+    // Показ окна
+    function showWindow(i) {
+        // Скрываем все окна
+        windows.forEach(w => w.style.display = "none");
+        
+        // Проверяем, что окно существует
+        if (windows[i]) {
+            windows[i].style.display = "block";
+            openedWindows[i] = true;
+            windowLastOpened[i] = Date.now();
+            console.log("ОТКРЫТО окно: " + (i + 1));
+            
+            // Автоматическое закрытие через 5 секунд
+            if (!paused) {
+                if (windowTimer) clearTimeout(windowTimer);
+                windowTimer = setTimeout(() => {
+                    windows[i].style.display = "none";
+                    windowTimer = null;
+                    console.log("Автоматически закрыто окно: " + (i + 1));
+                }, windowOpenTime);
+            }
+        } else {
+            console.error("Окно с индексом " + i + " не найдено!");
+        }
+    }
+
+    // Проверка, достиг ли корабль точки
+    function checkPoints() {
+        const scene = document.getElementById('scene');
+        const sceneWidth = scene.offsetWidth;
+        const containerWidth = shipContainer.offsetWidth;
+        
+        // Вычисляем текущую позицию прокрутки в процентах
+        const scrollPercent = (x / maxX) * 100;
+        
+        // Определяем, какую точку мы должны показать
+        // Точки расположены через каждые 10% начиная с 5%
+        for (let i = 0; i < 9; i++) {
+            let pointPosition = 5 + (i * 10); // 5%, 15%, 25%...
+            
+            // Проверяем, находимся ли мы в районе точки (±2%)
+            if (Math.abs(scrollPercent - pointPosition) < 2) {
+                // Проверяем, не показывали ли мы уже это окно недавно
+                const currentTime = Date.now();
+                if (!openedWindows[i] && currentTime - windowLastOpened[i] >= minWindowInterval) {
+                    showWindow(i);
+                    break; // Показываем только одно окно за раз
+                }
+            }
+        }
+    }
+
+    // Движение корабля
+    function animate() {
+        if (!paused) {
+            // Ограничиваем движение, чтобы контейнер не выходил за границы
+            x = Math.max(0, Math.min(x + speed, maxX));
+            shipContainer.style.left = -x + "px";
+// Проверяем точки для открытия окон
+            checkPoints();
+        }
+        requestAnimationFrame(animate);
+    }
+
+    // Запуск анимации
+    init();
+    animate();
+
+    /* Пауза */
+    document.getElementById("pauseBtn").onclick = () => {
+        paused = true;
+        document.getElementById("pauseBtn").classList.add("hide");
+        document.getElementById("resumeBtn").classList.remove("hide");
+        document.getElementById("leftArrow").classList.remove("hide");
+        document.getElementById("rightArrow").classList.remove("hide");
+        
+        // Останавливаем таймер авто-закрытия окна
+        if (windowTimer) {
+            clearTimeout(windowTimer);
+            windowTimer = null;
+        }
+    };
+
+    /* Продолжить */
+    document.getElementById("resumeBtn").onclick = () => {
+        paused = false;
+        document.getElementById("resumeBtn").classList.add("hide");
+        document.getElementById("leftArrow").classList.add("hide");
+        document.getElementById("rightArrow").classList.add("hide");
+        document.getElementById("pauseBtn").classList.remove("hide");
+        
+        // Закрываем все окна при продолжении
+        windows.forEach(w => w.style.display = "none");
+    };
+
+    /* Стрелки для прокрутки в паузе */
+    document.getElementById("leftArrow").onclick = () => {
+        if (paused) {
+            x = Math.max(0, x - 50);
+            shipContainer.style.left = -x + "px";
+        }
+    };
+
+    document.getElementById("rightArrow").onclick = () => {
+        if (paused) {
+            x = Math.min(maxX, x + 50);
+            shipContainer.style.left = -x + "px";
+        }
+    };
+
+    /* Клик по точке в паузе */
+    points.forEach(p => {
+        p.onclick = () => {
+            if (paused) {
+                let id = parseInt(p.getAttribute("data-id"));
+                showWindow(id);
+            }
+        };
+    });
+
+    /* Клик по фону для закрытия окон в паузе */
+    document.addEventListener('click', function(e) {
+        if (paused && !e.target.closest('.info-window') && !e.target.closest('.point') && !e.target.closest('.close-btn')) {
+            windows.forEach(w => w.style.display = "none");
+        }
+    });
+    
+    // Отладка: выводим информацию в консоль
+    console.log("Скрипт загружен. Ждем открытия окон...");
+</script>
+
+</body>
+</html>

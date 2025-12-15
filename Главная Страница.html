@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Линейные корабли Балтийского флота</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <main class="content">
+<main class="content">
+    <div class="title-container">
+        <h1 class="main-title">Линейные корабли Балтийского флота:</h1>
+        <h2 class="subtitle">от «Полтавы» до «Святого Павла»</h2>
+    </div>
+    <button class="btb-btn"></button>
+    
+    <div class="main-block"></div>
+    
+    <div class="bottom-row">
+        <img src="image 3.jpg" class="ship-img">
+        <div class="start-wrapper">
+            <button class="start-btn">Старт</button>
+        </div>
+                <aside class="sidebar">
+        <button class="btn-sharp" onclick="showModal('modal1')">О проекте</button>
+        <button class="btn-sharp btn-danger" onclick="showModal('modal2')">О команде</button>
+        <button class="scroll-btn" onclick="scrollToBottom()">Узнать больше</button>
+        </aside>
+        </div>
+    </main>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="margin: 0;">О проекте</h3>
+                <button class="close" onclick="hideModal('modal1')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>БЛАБЛАБЛАБЛАБЛА</strong></p>
+                <p><strong>ВАВАВАВАВАВАВАВ</strong></p>
+                <p><strong>ЛЯЛЯЛЯЛЯЛЯЛЯЛЯЛЯ</strong></p>
+                <button class="btn-sharp" onclick="hideModal('modal1')">Закрыть</button>
+                <button class="btn-sharp btn-danger" onclick="showModal('modal2'); hideModal('modal1');">Открыть окно 2</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 style="margin: 0;">О команде</h3>
+                <button class="close" onclick="hideModal('modal2')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>БЛАБЛАБЛАБЛАБЛА</strong></p>
+                <p><strong>ВАВАВАВАВАВАВАВ</strong></p>
+                <p><strong>ЛЯЛЯЛЯЛЯЛЯЛЯЛЯЛЯ</strong></p>
+                <button class="btn-sharp" onclick="hideModal('modal2')">Закрыть</button>
+                <button class="btn-sharp" onclick="showModal('modal1'); hideModal('modal2');">Открыть окно 1</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function hideModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
