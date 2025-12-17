@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Линейные корабли</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style2.css">
 <body>
 
 <!-- Кнопка перехода -->
  <aside class="sidebar">
 Линейные корабли Балтийского флота: от «Полтавы» до «Святого Павла»
 <span></span>
-<a href="another.html" class="top-button"></a>
+<a href="Главная Страница.html" class="top-button"></a>
 </aside>
 
 <!-- Обёртка сцены -->
@@ -34,9 +34,9 @@
     </div>
     <!-- Панель управления -->
     <div class="controls">
-        <button id="pauseBtn">Пауза</button>
-        <button id="resumeBtn" class="hide">Продолжить</button>
+        <button id="pauseBtn" >⏸</button>
         <button id="leftArrow" class="arrow hide">←</button>
+        <button id="resumeBtn" class="hide">▶</button>
         <button id="rightArrow" class="arrow hide">→</button>
     </div>
 </div>
@@ -63,65 +63,168 @@
 </div>
 
 <div class="info-window" data-id="1">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img2.jpg" alt="Изображение 2">
-    <p>Окно 2: Корабль эпохи парусного флота с трехъярусной артиллерией.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="2">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img3.jpg" alt="Изображение 3">
-    <p>Окно 3: Трехпалубный линейный корабль начала XVIII века.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="3">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img4.jpg" alt="Изображение 4">
-    <p>Окно 4: Первый корабль с паровым двигателем и гребными колесами.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="4">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img5.jpg" alt="Изображение 5">
-    <p>Окно 5: Дредноут начала XX века с мощной артиллерией.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="5">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img6.jpg" alt="Изображение 6">
-    <p>Окно 6: Линкор Второй мировой войны с авиационным вооружением.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="6">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img7.jpg" alt="Изображение 7">
-    <p>Окно 7: Современный линейный корабль с ракетными установками.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="7">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img8.jpg" alt="Изображение 8">
-    <p>Окно 8: Корабль с ядерным вооружением и системами ПВО.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <div class="info-window" data-id="8">
-    <button class="close-btn">×</button>
-    <div class="gray-box"></div>
-    <img src="img9.jpg" alt="Изображение 9">
-    <p>Окно 9: Будущее линейных кораблей - автономные боевые платформы.</p>
+    <div class="text-content">
+        <h2>Заголовок окна</h2>
+        <p>
+           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>
+            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
+
+    <button onclick="document.getElementById('infoWindow').style.display='none'">
+        Закрыть окно
+    </button>
 </div>
 
 <script>
     let shipContainer = document.getElementById("ship-container");
-    let points = document.
-querySelectorAll(".point");
+    let points = document.querySelectorAll(".point"); // Исправлено
     let windows = document.querySelectorAll(".info-window");
     let closeBtns = document.querySelectorAll(".close-btn");
 
@@ -130,9 +233,9 @@ querySelectorAll(".point");
     let speed = 0.1; // Замедленная скорость
     let maxX = 0;
     let windowTimer = null;
-    let windowOpenTime = 5000000; // 5 секунд на чтение
+    let windowOpenTime = 5000000;
     let lastWindowTime = 0;
-    let minWindowInterval = 5000; // Минимальное время между окнами - 5 секунд
+    let minWindowInterval = 500;
     
     // Массив для отслеживания открытых окон
     let openedWindows = Array(9).fill(false);
@@ -141,6 +244,12 @@ querySelectorAll(".point");
 
     // Инициализация
     function init() {
+        // Проверяем, существуют ли необходимые элементы
+        if (!shipContainer) {
+            console.error("Элемент ship-container не найден!");
+            return;
+        }
+        
         // Скрываем окна при загрузке
         windows.forEach(w => w.style.display = "none");
         
@@ -165,7 +274,14 @@ querySelectorAll(".point");
 
     // Обновляем максимальное смещение
     function updateMaxX() {
-        const sceneWidth = document.getElementById('scene').offsetWidth;
+        const scene = document.getElementById('scene');
+        if (!scene) {
+            console.error("Элемент scene не найден!");
+            maxX = 0;
+            return;
+        }
+        
+        const sceneWidth = scene.offsetWidth;
         const containerWidth = shipContainer.offsetWidth;
         maxX = Math.max(0, containerWidth - sceneWidth);
         console.log("maxX обновлен: " + maxX + " (ширина контейнера: " + containerWidth + ", ширина сцены: " + sceneWidth + ")");
@@ -173,41 +289,42 @@ querySelectorAll(".point");
 
     // Показ окна
     function showWindow(i) {
+        // Проверяем, что окно существует
+        if (!windows[i]) {
+            console.error("Окно с индексом " + i + " не найдено!");
+            return;
+        }
+        
         // Скрываем все окна
         windows.forEach(w => w.style.display = "none");
         
-        // Проверяем, что окно существует
-        if (windows[i]) {
-            windows[i].style.display = "block";
-            openedWindows[i] = true;
-            windowLastOpened[i] = Date.now();
-            console.log("ОТКРЫТО окно: " + (i + 1));
-            
-            // Автоматическое закрытие через 5 секунд
-            if (!paused) {
-                if (windowTimer) clearTimeout(windowTimer);
-                windowTimer = setTimeout(() => {
-                    windows[i].style.display = "none";
-                    windowTimer = null;
-                    console.log("Автоматически закрыто окно: " + (i + 1));
-                }, windowOpenTime);
-            }
-        } else {
-            console.error("Окно с индексом " + i + " не найдено!");
+        windows[i].style.display = "block";
+        openedWindows[i] = true;
+        windowLastOpened[i] = Date.now();
+        console.log("ОТКРЫТО окно: " + (i + 1));
+        
+        // Автоматическое закрытие через 5 секунд
+        if (!paused) {
+            if (windowTimer) clearTimeout(windowTimer);
+            windowTimer = setTimeout(() => {
+                windows[i].style.display = "none";
+                windowTimer = null;
+                console.log("Автоматически закрыто окно: " + (i + 1));
+            }, windowOpenTime);
         }
     }
 
     // Проверка, достиг ли корабль точки
     function checkPoints() {
         const scene = document.getElementById('scene');
+        if (!scene) return;
+        
         const sceneWidth = scene.offsetWidth;
-        const containerWidth = shipContainer.offsetWidth;
         
         // Вычисляем текущую позицию прокрутки в процентах
         const scrollPercent = (x / maxX) * 100;
         
         // Определяем, какую точку мы должны показать
-        // Точки расположены через каждые 10% начиная с 5%
         for (let i = 0; i < 9; i++) {
             let pointPosition = 5 + (i * 10); // 5%, 15%, 25%...
             
@@ -217,19 +334,19 @@ querySelectorAll(".point");
                 const currentTime = Date.now();
                 if (!openedWindows[i] && currentTime - windowLastOpened[i] >= minWindowInterval) {
                     showWindow(i);
-                    break; // Показываем только одно окно за раз
+break; // Показываем только одно окно за раз
                 }
             }
         }
     }
 
-    // Движение корабля
     function animate() {
         if (!paused) {
             // Ограничиваем движение, чтобы контейнер не выходил за границы
-            x = Math.max(0, Math.min(x + speed, maxX));
+            x = Math.max(0, Math.min(x + speed, maxX)); // Исправлено
             shipContainer.style.left = -x + "px";
-// Проверяем точки для открытия окон
+
+            // Проверяем точки для открытия окон
             checkPoints();
         }
         requestAnimationFrame(animate);
@@ -239,47 +356,57 @@ querySelectorAll(".point");
     init();
     animate();
 
-    /* Пауза */
-    document.getElementById("pauseBtn").onclick = () => {
-        paused = true;
-        document.getElementById("pauseBtn").classList.add("hide");
-        document.getElementById("resumeBtn").classList.remove("hide");
-        document.getElementById("leftArrow").classList.remove("hide");
-        document.getElementById("rightArrow").classList.remove("hide");
-        
-        // Останавливаем таймер авто-закрытия окна
-        if (windowTimer) {
-            clearTimeout(windowTimer);
-            windowTimer = null;
-        }
-    };
+    // Находим кнопки
+    const pauseBtn = document.getElementById("pauseBtn");
+    const resumeBtn = document.getElementById("resumeBtn");
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
 
-    /* Продолжить */
-    document.getElementById("resumeBtn").onclick = () => {
-        paused = false;
-        document.getElementById("resumeBtn").classList.add("hide");
-        document.getElementById("leftArrow").classList.add("hide");
-        document.getElementById("rightArrow").classList.add("hide");
-        document.getElementById("pauseBtn").classList.remove("hide");
-        
-        // Закрываем все окна при продолжении
-        windows.forEach(w => w.style.display = "none");
-    };
+    // Проверяем, существуют ли кнопки
+    if (pauseBtn && resumeBtn && leftArrow && rightArrow) {
+        /* Пауза */
+        pauseBtn.onclick = () => {
+            paused = true;
+            pauseBtn.classList.add("hide");
+            resumeBtn.classList.remove("hide");
+            leftArrow.classList.remove("hide");
+            rightArrow.classList.remove("hide");
+            
+            // Останавливаем таймер авто-закрытия окна
+            if (windowTimer) {
+                clearTimeout(windowTimer);
+                windowTimer = null;
+            }
+        };
 
-    /* Стрелки для прокрутки в паузе */
-    document.getElementById("leftArrow").onclick = () => {
-        if (paused) {
-            x = Math.max(0, x - 50);
-            shipContainer.style.left = -x + "px";
-        }
-    };
+        resumeBtn.onclick = () => {
+            paused = false;
+            openedWindows.fill(false);
+            resumeBtn.classList.add("hide");
+            leftArrow.classList.add("hide");
+            rightArrow.classList.add("hide");
+            pauseBtn.classList.remove("hide");
 
-    document.getElementById("rightArrow").onclick = () => {
-        if (paused) {
-            x = Math.min(maxX, x + 50);
-            shipContainer.style.left = -x + "px";
-        }
-    };
+            windows.forEach(w => w.style.display = "none");
+        };
+
+        /* Стрелки для прокрутки в паузе */
+        leftArrow.onclick = () => {
+            if (paused) {
+                x = Math.max(0, x - 50);
+                shipContainer.style.left = -x + "px";
+            }
+        };
+
+        rightArrow.onclick = () => {
+            if (paused) {
+                x = Math.min(maxX, x + 50);
+                shipContainer.style.left = -x + "px";
+            }
+        };
+    } else {
+        console.error("Не все кнопки управления найдены!");
+    }
 
     /* Клик по точке в паузе */
     points.forEach(p => {

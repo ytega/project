@@ -15,6 +15,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
+    min-height: 200vh;
 }
 
 .content {
@@ -25,7 +26,7 @@ body {
     margin-right: 300px;
     width: calc(100vw - 500px);
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 200vh;
 }
 
 .title-container {
@@ -119,16 +120,31 @@ body {
 }
 
 .start-btn {
-    padding: 60px 150px;
+    display: inline-flex;              /* 🔥 ключевое */
+    align-items: center;               /* вертикальный центр */
+    justify-content: center;           /* горизонтальный центр */
+
+    padding: 40px 80px;                /* меньше */
     background: #7b8498;
     border: 2px solid #252323;
+
     font-size: 42px;
-    cursor: pointer;
-    transition: background-color 0.25s ease, transform 0.25s ease;
-    box-sizing: border-box;
     color: #252323;
     font-family: "Bona Nova SC", "Times New Roman", Georgia, serif;
-    min-width: 600px;
+
+    text-decoration: none;             /* ❌ убрать подчёркивание */
+    cursor: pointer;
+
+    transition: background-color 0.25s ease, transform 0.25s ease;
+    box-sizing: border-box;
+
+    min-width: 420px;                  /* ❗ уже, чем было */
+}
+
+/* hover как у кнопки */
+.start-btn:hover {
+    background: #8c95aa;
+    transform: translateY(-2px);
 }
 
 .start-btn:hover {
@@ -272,6 +288,11 @@ max-width: 500px;
     background: #1e7e34;
     transform: translateY(-3px);
     border: 2px solid #252323;
+}
+
+/* ЭТО ПРАВИЛО СКРЫВАЕТ НИЖНЮЮ ЧАСТЬ САЙТА */
+.page-bottom {
+    display: none !important;
 }
 
 p, h2, h3, h4, h5, h6, span, div, button, input, textarea {
