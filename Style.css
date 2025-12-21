@@ -5,9 +5,9 @@ body {
     padding: 0;
     background: #1d1d1d;
     font-family: "Bona Nova SC", "Times New Roman", Georgia, serif;
-    height: auto;
+    height: 100%;
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden
 }
 
 .container {
