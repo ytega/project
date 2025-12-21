@@ -38,7 +38,6 @@
         align-items: center;
         }
         
-        /* Сцена на весь экран */
         #scene {
             position: fixed;
             width: 100vw;
@@ -48,16 +47,14 @@
             left: 0;
         }
 
-        /* Контейнер для корабля и точек */
         #ship-container {
             position: absolute;
             top: 0;
             left: 0;
-            width: 200vw; /* Ширина больше экрана для прокрутки */
+            width: 200vw;
             height: 100vh;
         }
 
-        /* Корабль на весь экран */
         #ship {
             position: absolute;
             top: 0;
@@ -67,7 +64,6 @@
             object-fit: cover;
         }
 
-        /* Точки - теперь привязаны к кораблю через контейнер */
         .point {
             position: absolute;
             top: 83%;
@@ -96,10 +92,6 @@
     display: flex;
     gap: 10px;
     z-index: 200;
-    /* Убраны свойства, создававшие панельку: */
-    /* background: #8791a7; */
-    /* border: 2px solid #252323; */
-    /* padding: 10px; */
 }
 
 button {
@@ -124,7 +116,6 @@ button:hover {
     padding: 10px 35px;
 }
 
-/* Скрытие */
 .hide {
     display: none;
 }
@@ -152,20 +143,20 @@ button:hover {
     overflow-y: auto;
 
     display: flex;
-    flex-direction: column;   /* вертикально */
+    flex-direction: column;
 }
 
-/* Контент сверху */
+
 .info-content {
     flex: 1;
 }
 
-/* КАРТИНКА ВНИЗУ */
+
 .info-image {
     width: 100%;
     margin-top: 15px;
 
-    border: none;             /* ❗ убрали рамку */
+    border: none;
     padding: 0;
     background: none;
 
@@ -196,7 +187,6 @@ button:hover {
             to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
         }
 
-        /* Кнопка закрытия окна */
         .close-btn {
             position: absolute;
             top: 10px;
@@ -209,3 +199,76 @@ button:hover {
             padding: 5px;
             line-height: 1;
         }
+
+        buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.question-button {
+    width: auto;             
+    min-width: min-content;    
+    min-height: 40px;                     
+    display: flex;
+    align-items: center;
+    background-color: #F5F1ED;
+    border: 2px solid #252323;
+    border-radius: 4px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    color: #333;
+    margin: 5px;
+}
+
+.button-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #e5e7eb;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: 600;
+    color: #252323;
+    font-size: 12px;
+}
+
+.button-text {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*Зеленый */
+.question-button.correct {
+    background-color: #d1fae5;
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.question-button.correct .button-number {
+    background-color: #10b981;
+    color: white;
+}
+
+/* Красный   */
+.question-button.incorrect {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #7f1d1d;
+}
+
+.question-button.incorrect .button-number {
+    background-color: #ef4444;
+    color: white;
+}
+
+.question-button:hover {
+    background-color: #e5e7eb;
+}

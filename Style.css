@@ -120,11 +120,11 @@ body {
 }
 
 .start-btn {
-    display: inline-flex;              /* 🔥 ключевое */
-    align-items: center;               /* вертикальный центр */
-    justify-content: center;           /* горизонтальный центр */
+    display: inline-flex;            
+    align-items: center;               
+    justify-content: center;           
 
-    padding: 40px 80px;                /* меньше */
+    padding: 40px 80px;              
     background: #7b8498;
     border: 2px solid #252323;
 
@@ -132,13 +132,13 @@ body {
     color: #252323;
     font-family: "Bona Nova SC", "Times New Roman", Georgia, serif;
 
-    text-decoration: none;             /* ❌ убрать подчёркивание */
+    text-decoration: none;         
     cursor: pointer;
 
     transition: background-color 0.25s ease, transform 0.25s ease;
     box-sizing: border-box;
 
-    min-width: 420px;                  /* ❗ уже, чем было */
+    min-width: 420px;                 
 }
 
 /* hover как у кнопки */
@@ -290,7 +290,6 @@ max-width: 500px;
     border: 2px solid #252323;
 }
 
-/* ЭТО ПРАВИЛО СКРЫВАЕТ НИЖНЮЮ ЧАСТЬ САЙТА */
 .page-bottom {
     display: none !important;
 }

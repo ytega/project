@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="Style2.css">
 <body>
 
-<!-- Кнопка перехода -->
- <aside class="sidebar">
+<aside class="sidebar">
 Линейные корабли Балтийского флота: от «Полтавы» до «Святого Павла»
 <span></span>
 <a href="Главная Страница.html" class="top-button"></a>
 </aside>
 
-<!-- Обёртка сцены -->
 <div id="scene">
-    <!-- Контейнер для корабля и точек -->
     <div id="ship-container">
-        <!-- Фоновый корабль -->
         <img src="Untitled.jpg" id="ship" alt="Корабль">
-
-        <!-- 9 точек на корабле (в процентах от ширины контейнера) -->
         <div class="point" style="left: 5%" data-id="0"></div>
         <div class="point" style="left: 15%" data-id="1"></div>
         <div class="point" style="left: 25%" data-id="2"></div>
@@ -32,401 +26,304 @@
         <div class="point" style="left: 75%" data-id="7"></div>
         <div class="point" style="left: 85%" data-id="8"></div>
     </div>
-    <!-- Панель управления -->
+
     <div class="controls">
-        <button id="pauseBtn" >⏸</button>
+        <button id="pauseBtn">⏸</button>
         <button id="leftArrow" class="arrow hide">←</button>
         <button id="resumeBtn" class="hide">▶</button>
         <button id="rightArrow" class="arrow hide">→</button>
     </div>
 </div>
 
-<!-- 9 всплывающих окон -->
-<div class="info-window" id="infoWindow">
+<!-- ОКНО 0: Добавлен data-id="0" -->
+<div class="info-window" id="infoWindow" data-id="0">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>История Балтийского флота</h2>
+        <h3>Допетровская эпоха</h3>
+        <p>Балтийское море носило стратегическое значение с момента появления государственности на территории Руси. Отсюда начинался имевший международное значение путь из варяг в греки. На северном участке этого пути располагались один из древнейших русских городов — Ладога и первая столица Руси — Новгород. В XI и XII веках новгородцы утвердились на южных берегах Финского залива, получивших впоследствии название Водской пятины.</p>
+        <p>В составе вооружённых сил Новгородской республики не было специальных военных флотов. Для военных действий на флоте использовались обычные торговые суда, называемые лодьями, достигавшие в длину 20-25 метров, имевшие парусное вооружение и вёсла. На протяжении XII—XIV веков продолжалась борьба в акватории Балтийского моря, успех попеременно сопутствовал то новгородцам, то их противникам.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image1.png" alt="Placeholder Image" class="window-image">
 </div>
 
 <div class="info-window" data-id="1">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>История Балтийского флота</h2>
+        <h3>Рождение флота</h3>
+        <p>Заслуга в создании Балтийского флота по праву принадлежит Петру I. В конце XVII века на Плещеевом озере Петром I создаётся потешная флотилия. В январе 1696 года при подготовке ко Второму Азовскому походу на верфях Воронежа и в Преображенском было развёрнуто масштабное строительство кораблей. Были сооружены 2 крупных корабля, 23 галеры и более 1300 стругов, барок и мелких судов. Во главе флота поставлен Лефорт. Флагманом флотилии определён 36-пушечный корабль «Апостол Пётр». В мае 1696 года русская флотилия блокировала Азов с моря. 19 июля 1696 года крепость сдалась. 20 октября 1696 года Боярская Дума провозглашает «Морским судам быть…» Эту дату можно считать днём рождения русского регулярного военно-морского флота.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image2.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 2: Исправлена структура -->
 <div class="info-window" data-id="2">
-    <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <h2>Тест</h2>
+    <p>Первая артиллерийская победа?</p>
+    <div class="question-button" data-answer="false">Гангут</div>
+    <div class="question-button" data-answer="true">Эзель</div>
+    <div class="question-button" data-answer="false">Гренгам</div>
+    <img src="image3.png" alt="Placeholder Image" class="window-image">
 </div>
 
 <div class="info-window" data-id="3">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>Участие Балтийского флота в Северной войне</h2>
+        <p>Участие Балтийского флота в Северной войне было ключевым для победы России.
+Флот был создан Петром I практически с нуля после неудач на суше в начале войны, чтобы оспорить господство Швеции на море, захватить устье Невы и обезопасить будущий Санкт-Петербург. Его боевой путь начался с успехов малых гребных судов, которые уже в 1703 году захватили первые шведские корабли. Флот надёжно защищал новую столицу от атак противника. Решающими стали победы в крупных морских сражениях. В 1714 году у мыса Гангут русский гребной флот, использовав тактический маневр в шхерах, одержал первую великую победу, позволившую перенести войну на территорию Швеции. В 1719 году состоялся Эзельский бой — первая победа молодого российского парусного флота в артиллерийской дуэли. А в 1720 году у острова Гренгам гребные галеры вновь разгромили шведскую эскадру. Эти триумфы окончательно сломили морскую мощь Швеции, обеспечили России господство в восточной Балтике и стали весомым аргументом для заключения победоносного Ништадтского мира в 1721 году, закрепившего за Россией статус великой морской державы.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image4.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 4: Исправлена структура -->
 <div class="info-window" data-id="4">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>Участие Балтийского флота в Северной войне</h2>
+        <p>Также, основным сражением где Балтийский флот оказал важную роль была Полтавская битва.</p>
+        <p>Полта́вская би́тва — генеральное сражение Северной войны между русскими войсками под командованием Петра I и шведской армией под командованием Карла XII. Битва состоялась 27 июня 1709 года в 6 верстах от города Полтавы.</p>
+        <p>Прямого участия Балтийский флот в самой Полтавской битве (27 июня 1709 г.) не принимал, так как сражение произошло в глубине континента. Однако его роль в кампании 1709 года и, в частности, в событиях вокруг Полтавы была стратегически абсолютно необходимой и решающей, обеспечив саму возможность победы русской армии.</p>
+        <p>Ключевое значение флота проявилось в обороне Санкт-Петербурга и прикрытии северо-западных рубежей. Главные силы русской армии во главе с Петром I находились на Украине, где столкнулись с войсками Карла XII. В это время шведская армия и флот под командованием генерала Любекера планировали нанести удар по практически беззащитному Санкт-Петербургу и Кроншлоту, чтобы отвлечь русских или захватить столицу. Однако Балтийский флот (кораблями и гребной флотилией) совместно с гарнизоном крепости блестяще сорвал эту операцию летом 1708 года и повторно в 1709 году. Шведский десант был отбит, а корабли не смогли приблизиться к ключевым позициям. Это позволило Петру I не отвлекать силы с южного, Полтавского направления и спокойно концентрировать войска для генерального сражения.</p>
+        <p>Таким образом, Балтийский флот выполнил роль «щита», надёжно прикрыв тылы и основное направление удара. Победа под Полтавой была бы невозможна, если бы Петру пришлось дробить армию и перебрасывать часть войск для спасения Петербурга и Балтийского побережья. Флот обеспечил стратегическую стабильность, которая и привела к триумфу на суше. После Полтавы стратегическая инициатива окончательно перешла к России, и значение флота только возросло для переноса войны на территорию Швеции.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image5.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 5: Исправлена структура -->
 <div class="info-window" data-id="5">
-    <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-    </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <h2>Тест</h2>
+    <p>Официальный день рождения флота?</p>
+    <div class="question-button" data-answer="false">1695</div>
+    <div class="question-button" data-answer="true">20 октября 1696</div>
+    <div class="question-button" data-answer="false">1700</div>
+    <img src="image6.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 6: Исправлена структура -->
 <div class="info-window" data-id="6">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>Корабли Балтийского флота</h2>
+        <p>«Полтава» В 1712 году в Санкт-Петербурге построили большой военный корабль. Его спустили на воду 15 июня. На этом корабле было 54 пушки.
+Он был одним из первых больших военных кораблей, построенных в России. Пётр I, царь России, сам участвовал в его постройке. Корабль назвали "Полтава" в честь победы русских над шведами в битве под Полтавой. Это была важная победа для России.</p>
+        <p>«Святой Павел» Корабль «Святой Павел» построили в Кронштадте в 1753 году и спустили на воду в 1755 году. Во время Семилетней войны он активно помогал русскому флоту на Балтике. Корабль защищал важный пролив Зунд, несколько раз перевозил и высаживал солдат для захвата прусской крепости Кольберг, а также участвовал в боях у берегов Пруссии.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image7.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 7: Исправлена структура -->
 <div class="info-window" data-id="7">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>Корабли Балтийского флота</h2>
+        <p>«Рига» — парусный линейный корабль Балтийского флота Российской империи, головной из серии кораблей одноимённого типа, участник Северной войны. Находился в составе флота с 1710 по 1721 год, совершал плавания в акватории Балтийского моря и Финского залива, принимал участие в практических и крейсерских плаваниях, а также в маневрах и торжественных мероприятиях флота.</p>
+        <p>«Ингерманланд» — парусный линейный корабль Балтийского флота Российской империи, построенный по проекту Петра I, первый из кораблей одноимённого типа и один из любимых линейных кораблей царя. Во время Северной войны выступал в роли флагмана как российского, так и объединенного русско-датско-голландско-английского флотов, периодически ходил под штандартом Петра I. Корабль был назван в честь земель, расположенных в устье Невы и известных под названием Ингерманландии, которые были отвоеваны у шведов в начале Северной войны. Эти корабли были спроектированы Петром I, отличались хорошей огневой мощью, скоростью, мореходностью и пропорциональностью корпуса, также имели достаточно совершенное для своего времени парусное вооружени. Бывший учитель Петра I по корабельному делу Поль Клаас писал об «Ингерманланде»: «Корабль изряден пропорциею».</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image8.png" alt="Placeholder Image" class="window-image">
 </div>
 
+<!-- ОКНО 8: Исправлена структура -->
 <div class="info-window" data-id="8">
     <div class="text-content">
-        <h2>Заголовок окна</h2>
-        <p>
-           длинный информационный текст  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Второй абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-            Третий абзац текста Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <h2>Корабли Балтийского флота</h2>
+        <p>«Лефорт» — парусный линейный корабль Балтийского флота Российской империи. Назван в честь адмирала Франца Лефорта, возглавлявшего российский военно-морской флот с 1695 по 1696 год. Оборонял Кронштадт во время Крымской войны, но затонул в мирное время: в кораблекрушении погибли все находящиеся на борту корабля 843 человека. Известен своей трагичной и до сих пор загадочной гибелью. До гибели парома Estonia катастрофа линейного корабля «Лефорт» являлась крупнейшей катастрофой на Балтийском море по числу жертв в мирное время. Корабль был найден 4 мая 2013 года экспедицией под руководством Константина Богданова между островами Гогланд и Большой Тютерс. На верхней палубе корабля прекрасно сохранились главный штурвал, одна из шлюпок, пушки-карронады в ютовой надстройке и личные вещи экипажа.</p>
     </div>
-    <img src="via.placeholder.com" alt="Placeholder Image" class="window-image">
-
-    <button onclick="document.getElementById('infoWindow').style.display='none'">
-        Закрыть окно
-    </button>
+    <img src="image9.png" alt="Placeholder Image" class="window-image">
 </div>
 
 <script>
-    let shipContainer = document.getElementById("ship-container");
-    let points = document.querySelectorAll(".point"); // Исправлено
-    let windows = document.querySelectorAll(".info-window");
-    let closeBtns = document.querySelectorAll(".close-btn");
+/* ================== ЭЛЕМЕНТЫ ================== */
 
-    let paused = false;
-    let x = 0;
-    let speed = 0.1; // Замедленная скорость
-    let maxX = 0;
-    let windowTimer = null;
-    let windowOpenTime = 5000000;
-    let lastWindowTime = 0;
-    let minWindowInterval = 500;
-    
-    // Массив для отслеживания открытых окон
-    let openedWindows = Array(9).fill(false);
-    // Массив для отслеживания времени последнего открытия каждого окна
-    let windowLastOpened = Array(9).fill(0);
+const shipContainer = document.getElementById("ship-container");
+const scene = document.getElementById("scene");
 
-    // Инициализация
-    function init() {
-        // Проверяем, существуют ли необходимые элементы
-        if (!shipContainer) {
-            console.error("Элемент ship-container не найден!");
-            return;
-        }
-        
-        // Скрываем окна при загрузке
-        windows.forEach(w => w.style.display = "none");
-        
-        // Добавляем обработчики закрытия окон
-        closeBtns.forEach((btn, index) => {
-            btn.addEventListener('click', () => {
-                windows[index].style.display = "none";
-                if (windowTimer) {
-                    clearTimeout(windowTimer);
-                    windowTimer = null;
-                }
-            });
-        });
+const points = document.querySelectorAll(".point");
+const windows = document.querySelectorAll(".info-window");
 
-        // Определяем максимальное смещение контейнера
-        updateMaxX();
-        window.addEventListener('resize', updateMaxX);
-        
-        console.log("Инициализация завершена. Всего окон: " + windows.length);
-        console.log("Всего точек: " + points.length);
+const pauseBtn = document.getElementById("pauseBtn");
+const resumeBtn = document.getElementById("resumeBtn");
+const leftArrow = document.getElementById("leftArrow");
+const rightArrow = document.getElementById("rightArrow");
+
+/* ================== СОСТОЯНИЕ ================== */
+
+let x = 0;
+let prevX = 0;
+let speed = 0.15;
+let maxX = 0;
+let paused = false;
+
+let windowTimer = null;
+const windowOpenTime = 15000;
+
+// Окна, открытые АВТОМАТИЧЕСКИ
+const autoOpened = new Set();
+
+/* ================== ВСПОМОГАТЕЛЬНЫЕ ================== */
+
+function hideAllWindows() {
+    windows.
+forEach(w => w.style.display = "none");
+}
+
+function getWindowById(id) {
+    // Ищем окно по data-id
+    return document.querySelector(`.info-window[data-id="${id}"]`);
+}
+
+function updateMaxX() {
+    if (!scene || !shipContainer) return;
+    maxX = Math.max(0, shipContainer.offsetWidth - scene.offsetWidth);
+}
+
+/* ================== ОТКРЫТИЕ ОКНА ================== */
+
+function openWindow(id, auto = true) {
+    const win = getWindowById(id);
+    if (!win) {
+        console.error("Окно не найдено с id:", id);
+        return;
     }
 
-    // Обновляем максимальное смещение
-    function updateMaxX() {
-        const scene = document.getElementById('scene');
-        if (!scene) {
-            console.error("Элемент scene не найден!");
-            maxX = 0;
-            return;
-        }
-        
-        const sceneWidth = scene.offsetWidth;
-        const containerWidth = shipContainer.offsetWidth;
-        maxX = Math.max(0, containerWidth - sceneWidth);
-        console.log("maxX обновлен: " + maxX + " (ширина контейнера: " + containerWidth + ", ширина сцены: " + sceneWidth + ")");
+    hideAllWindows();
+    win.style.display = "block";
+
+    if (auto) autoOpened.add(id);
+
+    if (windowTimer) clearTimeout(windowTimer);
+
+    if (auto && !paused) {
+        windowTimer = setTimeout(() => {
+            win.style.display = "none";
+            windowTimer = null;
+        }, windowOpenTime);
     }
 
-    // Показ окна
-    function showWindow(i) {
-        // Проверяем, что окно существует
-        if (!windows[i]) {
-            console.error("Окно с индексом " + i + " не найдено!");
-            return;
-        }
+    console.log("Открыто окно:", id, auto ? "AUTO" : "MANUAL");
+}
+
+/* ================== ПРОВЕРКА ТОЧЕК ================== */
+
+function checkPoints() {
+    if (paused) return;
+
+    points.forEach(point => {
+        const id = Number(point.dataset.id);
         
-        // Скрываем все окна
-        windows.forEach(w => w.style.display = "none");
-        
-        windows[i].style.display = "block";
-        openedWindows[i] = true;
-        windowLastOpened[i] = Date.now();
-        console.log("ОТКРЫТО окно: " + (i + 1));
-        
-        // Автоматическое закрытие через 5 секунд
-        if (!paused) {
-            if (windowTimer) clearTimeout(windowTimer);
-            windowTimer = setTimeout(() => {
-                windows[i].style.display = "none";
-                windowTimer = null;
-                console.log("Автоматически закрыто окно: " + (i + 1));
-            }, windowOpenTime);
-        }
-    }
+        // Пропускаем только если окно было открыто автоматически
+        if (autoOpened.has(id)) return;
 
-    // Проверка, достиг ли корабль точки
-    function checkPoints() {
-        const scene = document.getElementById('scene');
-        if (!scene) return;
-        
-        const sceneWidth = scene.offsetWidth;
-        
-        // Вычисляем текущую позицию прокрутки в процентах
-        const scrollPercent = (x / maxX) * 100;
-        
-        // Определяем, какую точку мы должны показать
-        for (let i = 0; i < 9; i++) {
-            let pointPosition = 5 + (i * 10); // 5%, 15%, 25%...
-            
-            // Проверяем, находимся ли мы в районе точки (±2%)
-            if (Math.abs(scrollPercent - pointPosition) < 2) {
-                // Проверяем, не показывали ли мы уже это окно недавно
-                const currentTime = Date.now();
-                if (!openedWindows[i] && currentTime - windowLastOpened[i] >= minWindowInterval) {
-                    showWindow(i);
-break; // Показываем только одно окно за раз
-                }
-            }
-        }
-    }
+        // позиция точки в px относительно сцены
+        const pointPx = (parseFloat(point.style.left) / 100) * maxX;
 
-    function animate() {
-        if (!paused) {
-            // Ограничиваем движение, чтобы контейнер не выходил за границы
-            x = Math.max(0, Math.min(x + speed, maxX)); // Исправлено
-            shipContainer.style.left = -x + "px";
-
-            // Проверяем точки для открытия окон
-            checkPoints();
-        }
-        requestAnimationFrame(animate);
-    }
-
-    // Запуск анимации
-    init();
-    animate();
-
-    // Находим кнопки
-    const pauseBtn = document.getElementById("pauseBtn");
-    const resumeBtn = document.getElementById("resumeBtn");
-    const leftArrow = document.getElementById("leftArrow");
-    const rightArrow = document.getElementById("rightArrow");
-
-    // Проверяем, существуют ли кнопки
-    if (pauseBtn && resumeBtn && leftArrow && rightArrow) {
-        /* Пауза */
-        pauseBtn.onclick = () => {
-            paused = true;
-            pauseBtn.classList.add("hide");
-            resumeBtn.classList.remove("hide");
-            leftArrow.classList.remove("hide");
-            rightArrow.classList.remove("hide");
-            
-            // Останавливаем таймер авто-закрытия окна
-            if (windowTimer) {
-                clearTimeout(windowTimer);
-                windowTimer = null;
-            }
-        };
-
-        resumeBtn.onclick = () => {
-            paused = false;
-            openedWindows.fill(false);
-            resumeBtn.classList.add("hide");
-            leftArrow.classList.add("hide");
-            rightArrow.classList.add("hide");
-            pauseBtn.classList.remove("hide");
-
-            windows.forEach(w => w.style.display = "none");
-        };
-
-        /* Стрелки для прокрутки в паузе */
-        leftArrow.onclick = () => {
-            if (paused) {
-                x = Math.max(0, x - 50);
-                shipContainer.style.left = -x + "px";
-            }
-        };
-
-        rightArrow.onclick = () => {
-            if (paused) {
-                x = Math.min(maxX, x + 50);
-                shipContainer.style.left = -x + "px";
-            }
-        };
-    } else {
-        console.error("Не все кнопки управления найдены!");
-    }
-
-    /* Клик по точке в паузе */
-    points.forEach(p => {
-        p.onclick = () => {
-            if (paused) {
-                let id = parseInt(p.getAttribute("data-id"));
-                showWindow(id);
-            }
-        };
-    });
-
-    /* Клик по фону для закрытия окон в паузе */
-    document.addEventListener('click', function(e) {
-        if (paused && !e.target.closest('.info-window') && !e.target.closest('.point') && !e.target.closest('.close-btn')) {
-            windows.forEach(w => w.style.display = "none");
+        // Проверяем, достиг ли корабль точки (с погрешностью)
+        if (Math.abs(x - pointPx) < speed * 2) {
+            openWindow(id, true);
         }
     });
-    
-    // Отладка: выводим информацию в консоль
-    console.log("Скрипт загружен. Ждем открытия окон...");
+}
+
+/* ================== АНИМАЦИЯ ================== */
+
+function animate() {
+    if (!paused) {
+        prevX = x;
+        x = Math.min(maxX, x + speed);
+        shipContainer.style.left = -x + "px";
+        checkPoints();
+    }
+    requestAnimationFrame(animate);
+}
+
+/* ================== ПАУЗА ================== */
+
+pauseBtn.onclick = () => {
+    paused = true;
+    pauseBtn.classList.add("hide");
+    resumeBtn.classList.remove("hide");
+    leftArrow.classList.remove("hide");
+    rightArrow.classList.remove("hide");
+
+    if (windowTimer) clearTimeout(windowTimer);
+};
+
+resumeBtn.onclick = () => {
+    paused = false;
+    resumeBtn.classList.add("hide");
+    leftArrow.classList.add("hide");
+    rightArrow.classList.add("hide");
+    pauseBtn.classList.remove("hide");
+};
+
+/* ================== РУЧНАЯ ПРОКРУТКА ================== */
+
+leftArrow.onclick = () => {
+    if (paused) {
+        x = Math.max(0, x - 60);
+        shipContainer.style.left = -x + "px";
+    }
+};
+
+rightArrow.onclick = () => {
+    if (paused) {
+        x = Math.min(maxX, x + 60);
+        shipContainer.style.left = -x + "px";
+    }
+};
+
+/* ================== КЛИК ПО ТОЧКАМ ================== */
+
+points.forEach(point => {
+    point.onclick = e => {
+        if (!paused) return;
+        e.stopPropagation();
+        const id = Number(point.dataset.id);
+        openWindow(id, false);
+    };
+});
+
+/* ================== ЗАКРЫТИЕ КЛИКОМ ВНЕ ================== */
+
+document.addEventListener("click", e => {
+    if (
+        paused &&
+        !e.target.closest(".info-window") &&
+        !e.target.closest(".point") &&
+        !e.target.closest("#leftArrow") &&
+        !e.target.closest("#rightArrow") &&
+        !e.target.closest("#pauseBtn") &&
+        !e.target.closest("#resumeBtn")
+    ) {
+        hideAllWindows();
+    }
+});
+
+/* ================== ТЕСТЫ ================== */
+
+document.querySelectorAll(".question-button").forEach(btn => {
+    btn.onclick = e => {
+        e.stopPropagation();
+        const parent = btn.parentElement;
+        parent.querySelectorAll(".question-button")
+            .forEach(b => b.classList.remove("correct", "incorrect"));
+        btn.classList.add(
+            btn.dataset.answer === "true" ? "correct" : "incorrect"
+        );
+    };
+});
+
+/* ================== СТАРТ ================== */
+
+hideAllWindows();
+updateMaxX();
+window.addEventListener("resize", updateMaxX);
+
+// Открываем окно с id=0 при старте
+setTimeout(() => {
+    if (!autoOpened.has(0)) {
+        openWindow(0, true);
+    }
+}, 100);
+
+animate();
+
+console.log("Все окна теперь должны работать корректно");
 </script>
 
 </body>
